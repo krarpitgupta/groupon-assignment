@@ -1,6 +1,5 @@
 # groupon-assignment
 
-
 npx playwright test --project=chromium => run test in headless mode in chrome browser
 
 npx playwright test --headed --project=chromium => run test in headed (UI) mode in chrome browser
