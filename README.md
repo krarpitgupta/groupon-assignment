@@ -5,7 +5,7 @@ To know more detail about assignment please click here [Assignment](https://docs
 ### How To Setup Framework ?
 
 #### Pre-Requisites
-Install Node Js v14 Minimum
+Install **Node Js v14** Minimum
 
 #### Steps To Setup Framework
 
@@ -69,3 +69,13 @@ Install Node Js v14 Minimum
 * To execute all tests in **Headless** mode in **Parallel** on **Chrome, Firefox, Safari**  browser run following command:
 
 `npx playwright test`
+
+#### How To Generate Report ?
+
+* Once The Test Execution is Completed run following command to generate report:
+
+`npx playwright show-report`
+
+* Test Report Will Be Generated As shown below:
+
+![Execution Report](./sampleReport.png)
