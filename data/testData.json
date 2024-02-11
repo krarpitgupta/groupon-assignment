@@ -1,0 +1,16 @@
+{
+	"red_colour": "rgb(220, 53, 69)",
+    "green_colour": "rgb(40, 167, 69)",
+    "first_name": "Arpit",
+    "last_name": "Gupta",
+    "email": "krarpit@gmail.com",
+    "mobile_number": "9876543210",
+    "subjects": "Maths, Physics",
+    "current_address": "Delhi India",
+    "state": "NCR",
+    "city": "Gurgaon",
+    "gender": "Male",
+    "hobbies": "Sports, Music"
+
+
+}
