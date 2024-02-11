@@ -1,4 +1,6 @@
-# groupon-assignment
+# Demo QA - PlayWright Assignment
+
+
 
 npx playwright test --project=chromium => run test in headless mode in chrome browser
 
