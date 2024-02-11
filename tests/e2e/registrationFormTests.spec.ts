@@ -19,6 +19,7 @@ test.describe(`Tests For Student Registration Form Fields`, async () => {
         registrationFormPage = new RegistrationFormPage(page);
         await registrationFormPage.lauchApp();
         await registrationFormPage.validateAppNavigateSuccessfully(testConstants.form_heading);
+        await registrationFormPage.disableAds();
     });
 
     test(`Validate the Presence of Interactable-UI Elements in Form`, async ({}) => {

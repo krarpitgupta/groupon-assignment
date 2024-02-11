@@ -67,9 +67,9 @@ export default class RegistrationForm {
         await this.baseMethods.fillInputValue(this.registrationFormLocators.emailEditBox, email);
         await this.baseMethods.fillInputValue(this.registrationFormLocators.mobileNoEditBox, mobileNo);
         await this.baseMethods.fillInputValue(this.registrationFormLocators.currentAddressEditBox, currentAddress);
-        await this.baseMethods.fillInputValue(this.registrationFormLocators.stateDropdown, state);
+        await this.baseMethods.fillInputValue(this.registrationFormLocators.stateEditBox, state);
         await this.page.keyboard.press('Enter');
-        await this.baseMethods.fillInputValue(this.registrationFormLocators.cityDropdown, city);
+        await this.baseMethods.fillInputValue(this.registrationFormLocators.cityEditBox, city);
         await this.page.keyboard.press('Enter');
 
     }
@@ -121,6 +121,10 @@ export default class RegistrationForm {
     
     }
 
-
+    async disableAds() {
+        await this.page.locator('//div[contains(@id,"google_ads")]').locator('nth=0').evaluate(element => element.style.display = 'none');
+        await this.page.locator('//div[contains(@id,"google_ads")]').locator('nth=1').evaluate(element => element.style.display = 'none');
+        await this.page.locator('//div[contains(@id,"google_ads")]').locator('nth=2').evaluate(element => element.style.display = 'none');
+    }
 
 }

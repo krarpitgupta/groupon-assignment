@@ -39,6 +39,8 @@ export default class RegistrationFormLocator {
     readonly currentAddressEditBox : Locator;
     readonly stateDropdown : Locator;
     readonly cityDropdown : Locator;
+    readonly stateEditBox : Locator;
+    readonly cityEditBox : Locator;
     readonly submitBtn : Locator;
 
     readonly formSubmitLabel : Locator;
@@ -89,8 +91,10 @@ export default class RegistrationFormLocator {
         this.musicCheckBox = page.locator('#hobbies-checkbox-3');
         this.chooseFileBtn = page.locator('#uploadPicture');
         this.currentAddressEditBox = page.locator('#currentAddress');
-        this.stateDropdown = page.locator('#react-select-3-input');
-        this.cityDropdown = page.locator('#react-select-4-input');
+        this.stateDropdown = page.locator('#state');
+        this.cityDropdown = page.locator('#city');
+        this.stateEditBox = page.locator('#react-select-3-input');
+        this.cityEditBox = page.locator('#react-select-4-input');
         this.submitBtn = page.locator('#submit');
 
         this.formSubmitLabel = page.locator('#example-modal-sizes-title-lg');
