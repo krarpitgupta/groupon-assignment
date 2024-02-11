@@ -79,3 +79,11 @@ Install **Node Js v14** Minimum
 * Test Report Will Be Generated As shown below:
 
 ![Execution Report](./sampleReport.png)
+
+#### Would Like To Add Following Features (Future Enhancement)?
+
+* Execution in **Docker**
+* Setup **Continuous Testing** pipeline using CI Tools
+* Integration with third party reporter like **Allure**
+* Integration with cloud execution provider like **BrowserStack** , **Saucelab**, **AWS Farm** etc.
+
