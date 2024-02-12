@@ -82,7 +82,7 @@ Install **Node Js v14** Minimum
 
 * Test Execution Will Look Like As shown below:
 
-  Kindly download ![Execution Video](https://drive.google.com/file/d/1WpYGYmBhYUzen-eM03qprUNc3O3RFj8T/view?usp=sharing) and enjoy the show !!
+  Kindly click on [Execution Video](https://drive.google.com/file/d/1WpYGYmBhYUzen-eM03qprUNc3O3RFj8T/view?usp=sharing) and enjoy the show !!
 
 #### Would Like To Add Following Features (Future Enhancement)?
 
