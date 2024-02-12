@@ -83,23 +83,25 @@ export default class BaseMethods {
         await this.page.waitForTimeout(timeout);
     }
 
-    async getCurrentDate() {
+    async getCurrentDate(partialMonth: boolean) {
         const months = [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
+            "January",
+            "February",
+            "March",
+            "April",
             "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
           ];
         const currentDate = new Date();
-        const dateString = currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
+        let dateString: string;
+        if (partialMonth) dateString = currentDate.getDate() + " " + (months[currentDate.getMonth()]).substring(0,3) + " " + currentDate.getFullYear();
+        else dateString = currentDate.getDate() + " " + months[currentDate.getMonth()] + "," + currentDate.getFullYear();
         return dateString;
     }
 

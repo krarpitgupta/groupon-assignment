@@ -171,7 +171,7 @@ test.describe(`Tests For Student Registration Form Fields`, async () => {
 
     test(`When Launch The App By Default DOB Should Set To Current Date`, async ({}) => {
         
-        await baseMethods.verifyElementAttribute(registrationFormLocator.dobEditBox, "value", await baseMethods.getCurrentDate());
+        await baseMethods.verifyElementAttribute(registrationFormLocator.dobEditBox, "value", await baseMethods.getCurrentDate(true));
     
     });
 
@@ -203,7 +203,7 @@ test.describe(`Tests For Student Registration Form Fields`, async () => {
         await baseMethods.clickOnElement(registrationFormLocator.submitBtn);
 
         await registrationFormPage.validateFormSubmitSuccessfully(testConstants.form_success_submit_msg);
-        await registrationFormPage.validateFormLabelValues(studentName, testData.email, testData.gender, testData.mobile_number, "11 February,2024", testData.subjects, testData.hobbies, pictureName, testData.current_address, stateCity);
+        await registrationFormPage.validateFormLabelValues(studentName, testData.email, testData.gender, testData.mobile_number, await baseMethods.getCurrentDate(false), testData.subjects, testData.hobbies, pictureName, testData.current_address, stateCity);
         
     });
 
