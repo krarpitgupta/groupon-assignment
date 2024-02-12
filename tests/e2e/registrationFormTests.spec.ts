@@ -121,8 +121,7 @@ test.describe(`Tests For Student Registration Form Fields`, async () => {
             baseMethods.validateElementIsEnabled(registrationFormLocator.currentAddressEditBox),
             baseMethods.validateElementIsEnabled(registrationFormLocator.stateDropdown),
             baseMethods.validateElementIsEnabled(registrationFormLocator.submitBtn),
-
-            //baseMethods.validateElementIsDisabled(registrationFormLocator.cityDropdown), need to check this
+            baseMethods.validateElementIsDisabled(registrationFormLocator.cityEditBox)
 
         ]);
     
